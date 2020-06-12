@@ -2,6 +2,9 @@
 # Use Array because it is the most space efficient, great run time complexity,
 # only edits the last item and the length of Array is not changing.
 
+# Just read the rubric and relized it is asking for either Stack or Queue and NOT Array.
+# Will need to loop back after reverse.py to implement Stack LIFO- Last In First Out
+
 # Ring buffer is a non-growable buffer with a fixed size.
 # When the ring buffer is full and a new element is inserted,
 # the oldest element in the ring buffer is overwritten with the newest element.
