@@ -1,5 +1,6 @@
 # Original Runtime: 8.093192100524902 seconds
 
+from binary_search_tree import BSTNode
 import time
 
 start_time = time.time()
@@ -20,7 +21,17 @@ duplicates = []  # Return the list of duplicates in this data structure
 #         if name_1 == name_2:
 #             duplicates.append(name_1)
 
+# Binary Search Tree runtime: 0.15172886848449707 seconds------------------
+bst = BSTNode("")
+for name_1 in names_1:
+    bst.insert(name_1)
 
+for name_2 in names_2:
+    if bst.contains(name_2):
+        duplicates.append(name_2)
+# END Binary Search Tree runtime: 0.15172886848449707 seconds------------
+
+# STRETCH GOAL YAASSS
 # Python's efficient key/value hash table structure is called a "dict".
 # The "empty dict" is just an empty pair of curly braces {}. Looking up or
 # setting a value in a dict uses square brackets, e.g. dict['foo'] looks
